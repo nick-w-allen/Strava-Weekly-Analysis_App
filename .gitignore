@@ -1,0 +1,6 @@
+strava_tokens.json
+strava.db
+*.csv
+__pycache__/
+*.pyc
+.env

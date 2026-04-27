@@ -1,0 +1,9 @@
+{
+  "token_type": "Bearer",
+  "expires_at": 1234567890,
+  "expires_in": 21600,
+  "refresh_token": "your_refresh_token_here",
+  "access_token": "your_access_token_here",
+  "athlete": {},
+  "client_secret": "your_client_secret_here"
+}
