@@ -26,16 +26,22 @@ Built for marathon training — but configurable for any goal.
 
 ### 2. Configure your Client ID
 
-Open `auth.py` and set your Client ID:
+Create a `.env` file based on `.env.example` and set your Client ID:
 
-```python
-CLIENT_ID = "your_client_id_here"
+```bash
+cp .env.example .env
+```
+
+Edit `.env`:
+
+```env
+STRAVA_CLIENT_ID=your_client_id_here
 ```
 
 ### 3. Install dependencies
 
 ```bash
-pip install requests
+pip install -r requirements.txt
 ```
 
 ### 4. Authenticate

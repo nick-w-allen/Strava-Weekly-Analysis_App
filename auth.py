@@ -3,9 +3,12 @@ import urllib.parse
 import json
 import time
 from http.server import HTTPServer, BaseHTTPRequestHandler
-import requests
 
-CLIENT_ID = "229604"
+import requests
+from dotenv import dotenv_values
+
+
+CLIENT_ID = dotenv_values(".env")["STRAVA_CLIENT_ID"]
 REDIRECT_URI = "http://localhost:8080"
 SCOPE = "activity:read_all"
 TOKEN_FILE = "strava_tokens.json"
@@ -22,12 +25,15 @@ def save_tokens(tokens):
 
 
 def refresh_tokens(tokens):
-    resp = requests.post("https://www.strava.com/oauth/token", data={
-        "client_id": CLIENT_ID,
-        "client_secret": tokens["client_secret"],
-        "grant_type": "refresh_token",
-        "refresh_token": tokens["refresh_token"],
-    })
+    resp = requests.post(
+        "https://www.strava.com/oauth/token",
+        data={
+            "client_id": CLIENT_ID,
+            "client_secret": tokens["client_secret"],
+            "grant_type": "refresh_token",
+            "refresh_token": tokens["refresh_token"],
+        },
+    )
     resp.raise_for_status()
     updated = {**tokens, **resp.json()}
     save_tokens(updated)
@@ -53,7 +59,7 @@ def run_oauth_flow():
         f"&scope={SCOPE}"
     )
 
-    print(f"\nOpening Strava auth in browser...")
+    print("\nOpening Strava auth in browser...")
     print(f"If it doesn't open, paste this URL manually:\n{auth_url}\n")
     webbrowser.open(auth_url)
 
@@ -75,12 +81,18 @@ def run_oauth_flow():
     server = HTTPServer(("localhost", 8080), Handler)
     server.handle_request()
 
-    resp = requests.post("https://www.strava.com/oauth/token", data={
-        "client_id": CLIENT_ID,
-        "client_secret": client_secret,
-        "code": auth_code,
-        "grant_type": "authorization_code",
-    })
+    if not auth_code:
+        raise RuntimeError("OAuth callback did not include an auth code")
+
+    resp = requests.post(
+        "https://www.strava.com/oauth/token",
+        data={
+            "client_id": CLIENT_ID,
+            "client_secret": client_secret,
+            "code": auth_code,
+            "grant_type": "authorization_code",
+        },
+    )
     resp.raise_for_status()
 
     tokens = resp.json()
