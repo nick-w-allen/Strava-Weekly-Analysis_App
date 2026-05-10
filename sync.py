@@ -54,5 +54,5 @@ def sync_to_db(conn, access_token, full=False):
         upsert_activity(conn, activity)
 
     dates = [a["start_date"][:10] for a in activities]
-    print(f"\nSynced {len(activities)} activities ({min(dates)} → {max(dates)})")
+    print(f"\nSynced {len(activities)} activities ({min(dates)} to {max(dates)})")
     return len(activities)

@@ -251,6 +251,11 @@ def _dur_status(actual_mins, target_mins):
 STATUS_LABEL = {"OK": "[OK]   ", "FAST": "[FAST] ", "SLOW": "[SLOW] ",
                 "SHORT": "[SHORT]", "MISS": "[MISS] "}
 
+def _safe(text):
+    """Strip characters the Windows console can't render."""
+    return str(text).encode("cp1252", errors="replace").decode("cp1252")
+
+
 def render_terminal(data):
     w = data
     print(f"\n{'=' * 65}")
@@ -276,7 +281,7 @@ def render_terminal(data):
 
     print(f"\n-- ALL SESSIONS")
     for s in w["all_sessions"]:
-        print(f"  {s['day']}  {s['type']:10}  {s['value']:8}  {s['pace']:9}  HR:{s['hr']:5}  {s['name']}")
+        print(f"  {s['day']}  {s['type']:10}  {s['value']:8}  {s['pace']:9}  HR:{s['hr']:5}  {_safe(s['name'])}")
 
     print(f"\n-- NEXT WEEK (Week {w['next_week_type']})")
     for s in w["next_sessions"]:
