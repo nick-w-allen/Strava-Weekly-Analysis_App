@@ -1,44 +1,44 @@
-# Weekly Training Report — w/e 2026-05-03
+# Weekly Training Report — w/e 2026-05-10
 
-**Goal:** Sub-3 marathon &nbsp;|&nbsp; **This week:** Week A &nbsp;|&nbsp; **Next week:** Week B
+**Goal:** Sub-3 marathon &nbsp;|&nbsp; **This week:** Week B &nbsp;|&nbsp; **Next week:** Week A
 
 ## Session Compliance
 
 | Day | Session | Status | Detail |
 |-----|---------|--------|--------|
-| Mon | Mon bike | ⚠️ SHORT | 45min (target 55min) |
+| Mon | Mon bike | ❌ MISS | no session recorded |
 | Mon | Mon strength | ❌ MISS | no session recorded |
-| Tue | Tue easy run | ⚡ FAST | 4:56/km (target 5:10-5:50) |
-| Wed | Wed workout | 🐢 SLOW | 5:09/km - push harder  (14.6km) |
-| Wed | Wed strength | ❌ MISS | no session recorded |
-| Fri | Fri bike | ❌ MISS | no session recorded |
+| Tue | Tue easy run | ⚡ FAST | 4:55/km (target 5:10-5:50) |
+| Wed | Wed workout | ✅ OK | 4:38/km  (11.8km) |
+| Wed | Wed strength | ⚠️ SHORT | 37min (target 40min) |
+| Fri | Fri bike | ✅ OK | 125min |
 | Fri | Fri strength | ❌ MISS | no session recorded |
-| Sat | Sat parkrun | 🐢 SLOW | 5:06/km (target 3:45-4:00) |
-| Sun | Sun Waiwera easy | ⚡ FAST | 4:45/km (target 5:10-5:50) |
+| Sat | Sat easy | ✅ OK | 5:16/km |
+| Sun | Sun Waiwera marathon pace | 🐢 SLOW | 5:16/km (target 4:05-4:20) |
 
 ## Volume vs Benchmark
 
 | Metric | This week | Target | Status |
 |--------|-----------|--------|--------|
-| Weekly km | 110.5km | ~73.6km | ✅ +36.9km |
-| Long run | 28.9km | 35km | ⚠️ |
+| Weekly km | 103.1km | ~73.6km | ✅ +29.5km |
+| Long run | 29.0km | 35km | ⚠️ |
 
 ## All Sessions This Week
 
 | Day | Type | Distance / Duration | Pace | HR | Activity |
 |-----|------|---------------------|------|----|----------|
-| Mon | Run | 17.7km | 5:40 | 132 | Ninja loops with Matt |
-| Tue | Run | 12.1km | 4:56 | 153 | Lunch Run |
-| Wed | Run | 14.6km | 5:09 | 146 | Evening Run |
-| Thu | Run | 12.0km | 5:14 | 144 | Coach's Run |
-| Fri | Run | 9.2km | 8:44 | 140 | Eve's Bush with Andrew |
-| Sat | Run | 9.4km | 5:42 | 134 | PreRun |
-| Sat | Run | 6.6km | 5:06 | 140 | ParkRun 25min pacer |
-| Sun | Run | 28.9km | 4:45 | 153 | Waiwera Loop |
-| Mon | VirtualRid | 45min | -- | -- | Zwift - Queen's Highway in Yorkshire |
-| Thu | WeightTrai | 31min | -- | -- | Evening Weight Training |
+| Mon | Run | 9.0km | 5:32 | 148 | Evening Run |
+| Tue | Run | 12.1km | 4:55 | 153 | Morning Run with Fartlek middle |
+| Wed | Run | 11.8km | 4:38 | 163 | Ninja workout 🥷 |
+| Thu | Run | 10.1km | 5:29 | 139 | Evening Run |
+| Fri | Run | 6.8km | 8:41 | 126 | Eve's Bush with Andrew & Stu |
+| Sat | Run | 24.3km | 5:16 | 139 | Morning Run |
+| Sun | Run | 29.0km | 5:16 | 141 | Waiwera Loop |
+| Wed | WeightTrai | 37min | -- | -- | Morning Weight Training |
+| Fri | Ride | 63min | -- | -- | Lunch Ride |
+| Fri | VirtualRid | 62min | -- | -- | Zwift - Jarvis Seaside Sprint in Watopia |
 
-## Next Week Focus — Week B
+## Next Week Focus — Week A
 
 | Day | Session | Target |
 |-----|---------|--------|
@@ -49,8 +49,8 @@
 | Wed | Wed strength | Strength: 40min+ |
 | Fri | Fri bike | Bike: 55min+ |
 | Fri | Fri strength | Strength: 40min+ |
-| Sat | Sat easy | Easy run: 5:10 to 5:50/km |
-| Sun | Sun Waiwera marathon pace | Long run at marathon pace: 4:05 to 4:20/km |
+| Sat | Sat parkrun | Parkrun at tempo: 3:45 to 4:00/km |
+| Sun | Sun Waiwera easy | Long run easy: 5:10 to 5:50/km |
 
 ---
-*Generated 2026-05-04 08:00 by strava-training-pipeline*
+*Generated 2026-05-11 08:15 by strava-training-pipeline*
